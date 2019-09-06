@@ -8,15 +8,22 @@
     .seo-info .info .item {
         margin-bottom: 20px;
     }
+	.container,
+    footer .container {
+        width: calc(100% - 200px);
+    }
+    .w-50 {
+        width: 47% !important
+    }
 }
 
 @media (max-width: 1500px) {
     .container,
     footer .container {
-        width: calc(100% - 40px);
+        width: calc(100% - 90px);
     }
     .w-50 {
-        width: 47% !important
+        width: 48% !important
     }
     #advantages-news:before {
         width: 50%
@@ -39,10 +46,10 @@
     }
     #menu-panel .top {
         padding-top: 40px;
-        padding-left: 40px;
+        padding-left: 80px;
     }
     #menu-panel .nav {
-        padding-left: 40px;
+        padding-left: 80px;
     }
 }
 
@@ -58,10 +65,23 @@
     .form-transform .form:before {
         display: none
     }
+	#our-partners .partners .img img{
+		max-width:100%;
+	}
 }
 
 @media (max-width: 1200px) {
-    
+	#menu-panel .top {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    #menu-panel .nav {
+        padding-left: 40px;
+    }
+    .container,
+    footer .container {
+        width: calc(100% - 40px);
+    }
     header .logo a {
         margin: 0;
     }

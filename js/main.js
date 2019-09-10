@@ -109,3 +109,10 @@ $(document).on("ready", function () {
 		$("#menu-panel").removeClass("menu-open");
 	});
 });
+
+
+$(document).on("ready", function () {
+	$(".product .like").click(function () {
+		$(this).toggleClass('active');
+	});
+});

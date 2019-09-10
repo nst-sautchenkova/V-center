@@ -826,8 +826,9 @@ h6{
 	}
 	header.inside-header{
 		padding:10px 0;
-		
 	}
+	header .main-menu .ico{margin-right:0;}
+	header .wishlist-block{display:none}
 }
 @media (max-width: 380px) {
     #menu-panel .navigation-menu > li {

@@ -2855,6 +2855,7 @@ form .form-group input:-moz-placeholder {
 }
 #checkout-page .basket-item .table-info{
     margin-top: 60px;
+    width: 100%;
 }
 #checkout-page .basket-item .table-info table{
 }

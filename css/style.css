@@ -684,6 +684,8 @@ header .lk-block a{
     flex-direction: row;
     -webkit-align-items: flex-end;
     align-items: flex-end;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
 }
 header .lk-block a:hover span{
 	color:#9d2c2c;
@@ -816,9 +818,7 @@ header .basket-block svg{
     position: relative;
     z-index: 2;
 }
-#prod-filter .filter li .ico:hover,  #prod-filter .filter .active .ico3{
-    transform: translate(0, -50px);
-}
+
 #prod-filter .filter li .ico1{
 	background: url(../img/slider/ico1.png) no-repeat center top;
 }
@@ -835,21 +835,6 @@ header .basket-block svg{
 	background:url(../img/slider/ico5.png) no-repeat center top;
 }
 
-#prod-filter .filter li .ico1:hover{
-	background:url(../img/slider/ico1-hover.png) no-repeat center top;
-}
-#prod-filter .filter li .ico2:hover{
-	background:url(../img/slider/ico2-hover.png) no-repeat center top;
-}
-#prod-filter .filter li .ico3:hover,  #prod-filter .filter .active .ico3{
-	background:url(../img/slider/ico3-hover.png) no-repeat center top;
-}
-#prod-filter .filter li .ico4:hover{
-	background:url(../img/slider/ico4-hover.png) no-repeat center top;
-}
-#prod-filter .filter li .ico5:hover{
-	background:url(../img/slider/ico5-hover.png) no-repeat center top;
-}
 #prod-filter .filter .ico{
     font-size: 16px;
     color: #302c25;
@@ -864,10 +849,7 @@ header .basket-block svg{
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }   
-#prod-filter .filter .ico:hover, #prod-filter .filter .active .ico{
-	color:#9d2c2c;
-	text-decoration: underline;
-}         
+        
 .prod-filter{
     padding-top: 150px;
     padding-bottom: 60px;
@@ -908,10 +890,7 @@ header .basket-block svg{
     width: 100%;
     height: 100%;
 }
-.prod-filter .item:hover .tit{
-    color: #9d2c2c;
-}
-.prod-filter .item:hover .img{transform: scale(1.1);}  
+
 .prod-filter .item .img{
     height: 205px;
     display: -webkit-flex;
@@ -980,6 +959,7 @@ header .basket-block svg{
 #prod-filter .filter li.active .line{
     display: block;
 }
+
 
 
 #types-skin{
@@ -1100,6 +1080,14 @@ header .basket-block svg{
 #types-skin .slider .info .ico3{
     width: 16px;
     height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 #types-skin .slider .info-block{
 	background:url(../img/i-bg.jpg) no-repeat top left;

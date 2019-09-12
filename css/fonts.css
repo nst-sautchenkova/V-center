@@ -105,5 +105,12 @@
          url('../fonts/Museo-Cyrl/exljbris_-_museo_cyrl_900-webfont.svg#museo_cyrl900') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+  font-family: 'Candara';
+  src: url('../fonts/Candara/Candara.eot') format('embedded-opentype');
+  src:  url('../fonts/Candara/Candara.woff') format('woff'), url('../fonts/Candara/Candara.ttf')  format('truetype'), url('../fonts/Candara/Candara.svg#Candara') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }

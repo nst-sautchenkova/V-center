@@ -101,10 +101,10 @@ body {
     line-height: 100%;
     height: 100%;
     overflow-x: hidden;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-family: Candara,Calibri,Arial,sans-serif; 
     color: #371f17;
     font-size: 17px;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 a {
@@ -208,7 +208,7 @@ td {
     border: 0;
     text-align: left;
     padding: 10px;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
 }
 
 th:last-child,
@@ -1687,12 +1687,6 @@ input:-ms-input-placeholder {
 }
 .seo-info .txt p{
     margin-bottom: 30px;
-
-
-
-
-
-
 }
 .seo-info .info{
     -webkit-flex-wrap: inherit;
@@ -1807,7 +1801,7 @@ footer .copyright{
 input::-webkit-input-placeholder {
     opacity: 1;
     transition: opacity 0.3s ease;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
     color: #371f17;
     font-size: 17px;
 }
@@ -1815,7 +1809,7 @@ input::-webkit-input-placeholder {
 input::-moz-placeholder {
     opacity: 1;
     transition: opacity 0.3s ease;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
     color: #371f17;
     font-size: 17px;
 }
@@ -1823,7 +1817,7 @@ input::-moz-placeholder {
 input:-moz-placeholder {
     opacity: 1;
     transition: opacity 0.3s ease;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
     color: #371f17;
     font-size: 17px;
 }
@@ -1868,6 +1862,7 @@ textarea:focus:-ms-input-placeholder {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 #advantages-news:before {
     content: '';
     display: block;
@@ -1935,6 +1930,20 @@ textarea:focus:-ms-input-placeholder {
     top: -100%;
     background: url(../img/slider/bg.png) no-repeat top center ;
 }
+#menu-panel .arrow-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menu-panel .hide-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 #menu-panel.menu-open{
 	opacity: 1;
     visibility: visible;
@@ -1951,8 +1960,11 @@ textarea:focus:-ms-input-placeholder {
 }
 #menu-panel .top .logo{
     margin-right: 58px;
+    position: relative;
 }
-#menu-hide{}
+#menu-hide{
+    position: relative;
+}
 
 #menu-hide .ico{
     display: inline-block;
@@ -1978,6 +1990,7 @@ textarea:focus:-ms-input-placeholder {
 }
 #menu-panel .nav li{
     margin-bottom: 50px;
+    position: relative;
 }
 #menu-panel .nav a{
     font-family: 'museo_cyrl_300';
@@ -2013,7 +2026,7 @@ textarea:focus:-ms-input-placeholder {
     align-items: center;
     position: relative;
     z-index: 1100;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
 }
 
 .navigation-menu > li.has-submenu:hover > .submenu {
@@ -2132,7 +2145,7 @@ textarea:focus:-ms-input-placeholder {
     padding: 0 38px 0 24px;
     font-size: 13px;
     color: #bdbcbb;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
     box-shadow: 0px 3px 10px rgba(0, 1, 3, 0.08);
     border-radius: 5px !important;
 }
@@ -2242,6 +2255,7 @@ header.inside-header{
 	margin-bottom:75px;
 }
 .img-100{
+
 	width:100%;
 	margin-bottom:40px;
 }
@@ -2667,7 +2681,7 @@ form .form-group label{
     font-size: 14px;
     color: #371f17;
     display: block;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara,Calibri,Arial,sans-serif;
     font-weight: 100;
     margin-bottom: 13px;
 }
@@ -3021,22 +3035,80 @@ form .form-group input:-moz-placeholder {
 	font-size:54px;
 	margin-bottom:70px;
 }
-#contact .contact_top{}
-#contact .contact_txt .txt{}
-#contact .contact_txt .tit{}
-#contact .contact_txt .item{}
-#contact .contact_txt .img{}
-#contact .contact_txt p{}
-#contact .contact_txt .phone{}
-#contact .contact_txt .mail{}
+#contact .contact_top{
+	-webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#contact .contact_top .txt{
+    width: 445px;
+}
+#contact .contact_txt .txt.l-block{
+    margin-right: 220px;
+}
+#contact .contact_txt .tit{
+    font-family: 'museo_cyrl700';
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#contact .contact_bottom{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#contact .contact_bottom center{
+	width:100%;
+	margin-bottom: 20px;
+}
+#contact .contact_txt .item{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+#contact .contact_txt .item p:last-child{
+	margin-bottom:0;
+}
+#contact .contact_txt .img{
+    width: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+#contact .contact_txt p{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 18px;
+    position: relative;
+    top: -1px;
+}
+#contact .contact_txt .phone{
+    display: block;
+    font-family: 'museo_cyrl700';
+    font-size: 16px;
+    color: #373530;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+#contact .contact_txt .mail{
+    font-size: 16px;
+}
 #contact .contact_map{
 	background:url(../img/contact.png) no-repeat;
 	width:882px;
 	height:618px;
 	margin: 0 auto;
 	position: relative;
+	margin-top: -65px;
+	left: -95px;
 }
-#contact .contact_map .marker {}
+#contact .contact_map .marker {
+    position: absolute;
+    font-family: 'museo_cyrl500';
+    font-size: 14px;
+}
 #contact .contact_map .marker .circle{
     width: 8px;
     height: 8px;
@@ -3044,38 +3116,387 @@ form .form-group input:-moz-placeholder {
     border-radius: 50%;
     display: inline-block;
     animation: pulse 1.7s infinite;
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
 }
-#contact .contact_map .marker-1{}
-#contact .contact_map .marker-2{}
-#contact .contact_map .marker-3{}
-#contact .contact_map .marker-4{}
+#contact .contact_map .marker-1{
+    top: 181px;
+    left: 122px;
+}
+#contact .contact_map .marker-2{
+    top: 179px;
+    right: 156px;
+}
+#contact .contact_map .marker-3{
+    right: 220px;
+    bottom: 328px;
+}
+#contact .contact_map .marker-4{
+    bottom: 238px;
+    right: 326px;
+}
+#contact .contact_map .marker-4 .circle{
+    left: 26px;
+    animation: none;
+    top: 1px;
+}
+#contact .contact_map .marker-4 img{
+    width: 99px;
+}
 
 #contact .contact_feedback{
 	background:url(../img/texture_bg.png);
 	width:540px;
 	padding:70px 95px;
-	margin:60px auto 80px;
+	margin: 35px auto 80px;
 }
 #contact .contact_feedback .tit{
 	margin-bottom:30px;
+	background: url(../img/line.png) repeat-x bottom;
+	padding-bottom: 25px;
 }
-#contact .contact_feedback .tit h2{}
-#contact .contact_feedback .tit p{}
-#contact .contact_feedback .form-group{}
+#contact .contact_feedback .tit h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contact .contact_feedback .tit p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+#contact .contact_feedback .bnt-block{
+    text-align: center;
+    margin-top: 45px;
+}
 .tit-page h1{
 	font-size:54px;
 }
 
-#delivery{}
-#delivery .delivery_top{}
-#delivery .delivery_top .txt{}
-#delivery .tit{}
-#delivery p{}
-#delivery .r-block{}
-#delivery .r-block .img{}
-#delivery .r-block .bold{}
-#delivery .r-block p{}
-#delivery .delivery_bottom{}
-#delivery .delivery_bottom .tittle-block{}
+#delivery{
+    padding: 75px 0 115px;
+}
+#delivery .delivery_top{
+    margin-top: 45px;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#delivery .delivery_top .txt{
+    width: calc(100% - 350px);
+    padding-right: 115px;
+    margin-top: 40px;
+}
+#delivery .tit{
+    font-size: 30px;
+    color: #371f17;
+    font-family: 'museo_cyrl500';
+    margin-bottom: 43px;
+}
+#delivery p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#delivery .r-block{
+    width: 350px;
+    text-align: center;
+}
+#delivery .r-block .img{
+    margin-bottom: 55px;
+}
+#delivery .r-block .bold{
+    font-weight: 600;
+}
+#delivery .delivery_bottom .tit{
+	font-size:18px;
+	font-family: 'museo_cyrl700';
+	margin-bottom:24px
+}
+#delivery .delivery_bottom p{}
+#delivery .delivery_bottom{
+    margin-top: 85px;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+#delivery .delivery_bottom .tittle-block{
+    width: 100%;
+    margin-bottom: 55px;
+}
 #delivery .delivery_bottom .tittle-block h3{}
-#delivery .delivery_bottom .txt{}
+#delivery .delivery_bottom .txt{
+    width: 255px;
+    margin-right: 30px;
+}
+
+
+#personal-page{
+    padding: 125px 0 130px;
+}
+#personal-page .row{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#personal-page .menu-lk{
+}
+#personal-page .menu-lk ul{
+    list-style: none;
+}
+#personal-page .menu-lk li{
+    margin-bottom: 40px;
+}
+#personal-page .menu-lk a{
+    font-family: 'museo_cyrl700';
+    font-size: 18px;
+    color: #333333;
+}
+#personal-page .menu-lk a span{}
+#personal-page .menu-lk a.active{
+    color: #9d2c2c;
+}
+#personal-page .personal-body{
+	background:url(../img/texture_bg.png);
+	padding: 80px 95px;
+	width: 920px;
+	box-shadow: 0px 10px 10px rgba(0, 1, 3, 0.07);
+}
+#personal-page .personal-body.personal-hist{
+    padding: 100px 40px 60px;
+}
+#personal-page .personal-body .tit{
+    margin-bottom: 50px;
+}
+#personal-page .personal-body .tit h3{
+    font-size: 30px;
+}
+#personal-page .personal-history{}
+#personal-page .personal-history .history-tit{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-bottom: 25px;
+}
+#personal-page .personal-history .tit{
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #aaa39e;
+    font-family: 'museo_cyrl_300';
+} 
+#personal-page .personal-history .h-1{
+    width: 80px;
+}
+#personal-page .personal-history .name{
+	color: #333333;
+}
+#personal-page .personal-history .name:hover{
+	color: #9d2c2c;
+}
+#personal-page .personal-history .h-2{
+    width: 160px;
+}
+#personal-page .personal-history .h-3{
+    width: 130px;
+}
+#personal-page .personal-history .h-4{
+    width: 105px;
+}
+#personal-page .personal-history .h-5{
+    width: 120px;
+}
+#personal-page .personal-history .h-6{
+    width: 145px;
+}
+#personal-page .personal-history .item {
+	background: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0px 5px 5px rgba(0, 1, 3, 0.03);
+}
+#personal-page .personal-history .item.active{}
+#personal-page .personal-history .history-header{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px 50px;
+    cursor: pointer;
+}
+#personal-page .personal-history .history-header.active{
+    box-shadow: 0 1px 20px rgba(0, 1, 3, 0.05);
+}
+#personal-page .personal-history .history-header .tit{}
+#personal-page .personal-history .history-header .tit .circle{
+	width:8px;
+	height:8px;
+	display: inline-block;
+	background: #ffcc00;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+#personal-page .personal-history .history-header .tit .ok .circle{
+	background:#669933;
+}
+#personal-page .personal-history .history-header .tit .error .circle{
+	background:#9d2c2c
+}
+#personal-page .personal-history .history-header .tit .error{
+	color:#9d2c2c
+}
+#personal-page .personal-history .history-header .m-tit, #personal-page .history-item  .m-tit{
+    font-size: 16px;
+    color: #2e2c2a;
+    font-family: Candara,Calibri,Arial,sans-serif;
+}
+#personal-page .personal-history .history-header .arrow{
+    position: absolute;
+    right: 30px;
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#personal-page .personal-history .history-header.active .arrow{
+	transform:rotate(180deg)
+}
+#personal-page .personal-history .history-body{
+    display: none;
+}
+#personal-page .personal-history .history-body_header{
+    background: #f7f7f7;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 13px 50px;
+    background: rgba(228, 226, 223, 0.47);
+    background: -moz-linear-gradient(top, rgba(228, 226, 223, 0.47) 0%, rgba(245, 243, 239, 0.47) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(228, 226, 223, 0.47)), color-stop(100%, rgba(245, 243, 239, 0.47)));
+    background: -webkit-linear-gradient(top, rgba(228, 226, 223, 0.47) 0%, rgba(245, 243, 239, 0.47) 100%);
+    background: -o-linear-gradient(top, rgba(228, 226, 223, 0.47) 0%, rgba(245, 243, 239, 0.47) 100%);
+    background: -ms-linear-gradient(top, rgba(228, 226, 223, 0.47) 0%, rgba(245, 243, 239, 0.47) 100%);
+    background: linear-gradient(top, rgba(228, 226, 223, 0.47) 0%, rgba(245, 243, 239, 0.47) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4e2df", endColorstr="#f5f3ef", GradientType=0);
+}
+#personal-page .personal-history .history-body_header .tit{}
+
+#personal-page .personal-history .history-body_header .m-tit{
+    font-size: 14px;
+    color: #2e2c2a;
+    font-family: Candara,Calibri,Arial,sans-serif;
+}
+#personal-page .personal-history .history-item{
+    padding: 10px 50px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f7f7;
+}
+#personal-page .personal-history .history-item .img{
+    width: 45px;
+}
+#personal-page .personal-history .history-item .img img{
+    max-width: 100%;
+}
+
+#personal-page .personal-history .history-header .h-2 .m-tit span{
+	margin-left: 15px;
+	display:inline-block;
+}
+#personal-page .personal-history .mob-tit, #personal-page .personal-history .history-header .h-2 .m-tit span.mob-tit{
+	display:none;
+}
+#personal-page .personal-data form{}
+#personal-page .personal-data .flex{
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#personal-page .personal-data .item{
+    width: calc(50% - 15px);
+}
+#personal-page .personal-data .form-group label{
+    margin-bottom: 13px;
+}
+#personal-page .personal-data .form-group{
+	margin-bottom:30px;
+}
+#personal-page .personal-data .checkbox{position: relative; top:7px}
+#personal-page .personal-data .btn-group{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+#personal-page .personal-data .btn-group .btn{
+    margin: 0 15px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #b43636;
+    background: -moz-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b43636), color-stop(100%, #9e2c2c));
+    background: -webkit-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+    background: -o-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+    background: -ms-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+    background: linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43636", endColorstr="#9e2c2c", GradientType=0);
+    width: 205px;
+}
+#personal-page .personal-data .btn-group .btn-white{
+	color:#2e2c2a;
+	background: #fff;
+	border: 1px solid #d5d1cc;
+	box-shadow: 0 1px 0 rgba(0, 1, 3, 0.27);
+}
+#personal-page .menu-lk{
+	padding-top:10px;
+}
+#personal-page .menu-lk .tit{
+    margin-bottom: 55px;
+}
+#personal-page .menu-lk .tit svg{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+#personal-page .menu-lk .tit span{
+    font-size: 26px;
+    color: #2e2c2a;
+    font-family: 'museo_cyrl500';
+}
+.contact_map .img-mob{
+	display:none;
+}

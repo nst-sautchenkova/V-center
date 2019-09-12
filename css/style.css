@@ -3269,6 +3269,7 @@ form .form-group input:-moz-placeholder {
 }
 #personal-page .personal-body.personal-hist{
     padding: 100px 40px 60px;
+    background: url(../img/texture2.png);
 }
 #personal-page .personal-body .tit{
     margin-bottom: 50px;

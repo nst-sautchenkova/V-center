@@ -695,7 +695,7 @@ header .lk-block a:hover path, header .basket-block a:hover path{
 }
 header .lk-block svg{
     height: 18px;
-    width: auto;
+    width: 18px;
     margin-right: 8px;
 }
 header .lk-block span{
@@ -1676,7 +1676,10 @@ input:-ms-input-placeholder {
     position: relative;
 	max-width:100%
 }
-.seo-info .txt{}
+.seo-info .txt{
+	position:relative;
+	z-index:2;
+}
 .seo-info .txt h2{
     font-size: 54px;
     font-family: 'museo_cyrl500';
@@ -3009,3 +3012,70 @@ form .form-group input:-moz-placeholder {
 .delivery-new.active{
 	display:block;
 }
+
+
+#contact{
+	padding:70px 0 125px;
+}
+#contact h1{
+	font-size:54px;
+	margin-bottom:70px;
+}
+#contact .contact_top{}
+#contact .contact_txt .txt{}
+#contact .contact_txt .tit{}
+#contact .contact_txt .item{}
+#contact .contact_txt .img{}
+#contact .contact_txt p{}
+#contact .contact_txt .phone{}
+#contact .contact_txt .mail{}
+#contact .contact_map{
+	background:url(../img/contact.png) no-repeat;
+	width:882px;
+	height:618px;
+	margin: 0 auto;
+	position: relative;
+}
+#contact .contact_map .marker {}
+#contact .contact_map .marker .circle{
+    width: 8px;
+    height: 8px;
+    background: #aa3232;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 1.7s infinite;
+}
+#contact .contact_map .marker-1{}
+#contact .contact_map .marker-2{}
+#contact .contact_map .marker-3{}
+#contact .contact_map .marker-4{}
+
+#contact .contact_feedback{
+	background:url(../img/texture_bg.png);
+	width:540px;
+	padding:70px 95px;
+	margin:60px auto 80px;
+}
+#contact .contact_feedback .tit{
+	margin-bottom:30px;
+}
+#contact .contact_feedback .tit h2{}
+#contact .contact_feedback .tit p{}
+#contact .contact_feedback .form-group{}
+.tit-page h1{
+	font-size:54px;
+}
+
+#delivery{}
+#delivery .delivery_top{}
+#delivery .delivery_top .txt{}
+#delivery .tit{}
+#delivery p{}
+#delivery .r-block{}
+#delivery .r-block .img{}
+#delivery .r-block .bold{}
+#delivery .r-block p{}
+#delivery .delivery_bottom{}
+#delivery .delivery_bottom .tittle-block{}
+#delivery .delivery_bottom .tittle-block h3{}
+#delivery .delivery_bottom .txt{}

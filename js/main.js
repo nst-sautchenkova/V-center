@@ -109,6 +109,11 @@ $(document).on("ready", function () {
 		$("#menu-panel").removeClass("menu-open");
 	});
 });
+$(document).on("ready", function () {
+	$("#menu-panel .hide-menu").click(function () {
+		$("#menu-panel").removeClass("menu-open");
+	});
+});
 
 
 $(document).on("ready", function () {
@@ -141,5 +146,16 @@ $(document).on("ready", function () {
 	});
 	$(".delivery-pickup").click(function () {
 		$(".delivery-new").removeClass('active');
+	});
+});
+
+
+
+$(document).on("ready", function () {
+	$(".history-header").click(function () {
+		$(this).toggleClass('active');
+		$(".personal-history .item").removeClass("active");
+		$(this).parent(".personal-history .item").addClass("active");
+		$(".personal-history .item.active").children(".history-body").slideToggle('normal');
 	});
 });

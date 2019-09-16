@@ -159,3 +159,13 @@ $(document).on("ready", function () {
 		$(".personal-history .item.active").children(".history-body").slideToggle('normal');
 	});
 });
+
+
+$(document).ready(function(){
+    $(".anchor").click(function () {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});

@@ -116,6 +116,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: #9d2c2c;
 }
 
 a:active,
@@ -1483,6 +1484,35 @@ input:-ms-input-placeholder {
     right:0;
 }
 #news .slider a:hover span{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	right:-5px;
 	transition: right 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
@@ -1667,6 +1697,7 @@ input:-ms-input-placeholder {
 .seo-info .img:before{
 	content:'';
 	display:block;
+
 	width: 565px;
 	height: 470px;
 	position: absolute;
@@ -1856,7 +1887,9 @@ textarea:focus::-webkit-input-placeholder {
 
 textarea:focus::-moz-placeholder {
     opacity: 0;
+
     transition: opacity 0.3s ease;
+
 }
 
 textarea:focus:-moz-placeholder {
@@ -2058,7 +2091,9 @@ font-family: 'Candara';
 	-o-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
 	left: 0;
+
 	top: 7px;
+
 }
 #menu-panel .navigation-menu > li.has-submenu:hover .line{
 	width:50px;
@@ -2256,7 +2291,9 @@ header.inside-header{
     background: #9d2c2c;
     border-radius: 50%;
     display: block;
+
     margin-bottom: 15px;
+
     animation: pulse 1.7s infinite;
 }
 #text-page  h1{
@@ -2463,6 +2500,7 @@ header.inside-header{
 	height: 390px;
 	position: relative;
 	box-shadow: 0px 30px 40px rgba(0, 1, 3, 0.25);
+
 	margin-bottom: 250px;
 }
 #catalog-banner .prod-filter{
@@ -2482,7 +2520,7 @@ header.inside-header{
     width: 445px;
     margin-bottom: 115px;
 }
-#catalog .product:hover .img:before{
+.product:hover .img:before{
 	content:'';
 	display:block;
 	background: url(../img/shadow2.png) no-repeat top;
@@ -2491,17 +2529,17 @@ header.inside-header{
 	position: absolute;
 	top: 26px;
 }
-#catalog .product:hover .info{
+.product:hover .info{
     box-shadow: 0px 20px 25px rgba(0, 1, 3, 0.2);
 }
-#catalog .product:hover .info .tit, #catalog .product .info .tit:hover{
+.product:hover .info .tit, .product .info .tit:hover{
     color: #9d2c2c;
     border-bottom:2px solid #9d2c2c;
 }
-#catalog .product .quick-btn:hover{
+.product .quick-btn:hover{
 	background: #9d2c2c;
 }
-#catalog .product:hover .img{
+.product:hover .img{
 	transform: translate(0px, -15px);
 }
 #catalog .product:nth-child(2){
@@ -2510,7 +2548,7 @@ header.inside-header{
 #catalog .product-3{
     margin-top: -170px;
 }
-#catalog .product .img{
+.product .img{
     width: 100%;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -2519,11 +2557,11 @@ header.inside-header{
     position: relative;
     text-align: center;
 }
-#catalog .product .img img{
+.product .img img{
 	max-width:100%;
 	position: relative;
 }
-#catalog .product .img:after{
+.product .img:after{
 	content:'';
 	display:block;
 	background:url(../img/catalog/c-1.png);
@@ -2534,7 +2572,7 @@ header.inside-header{
 	top: 50px;
 	margin-left: -14px;
 }
-#catalog .product .info{
+.product .info{
     padding: 50px 65px 55px;
     background: #fff;
     text-align: center;
@@ -2543,7 +2581,7 @@ header.inside-header{
     position: relative;
     z-index: 2;
 }
-#catalog .product a{
+.product a{
     font-size: 36px;
     color: #312d25;
     display: inline-block;
@@ -2551,22 +2589,22 @@ header.inside-header{
     border-bottom:2px solid transparent;
     padding-bottom: 1px;
 }
-#catalog .product p{
+.product p{
     font-size: 14px;
     color: #666666;
     line-height: 16px;
 }
-#catalog .product .flex{
+.product .flex{
     margin-top: 20px;
     -webkit-justify-content: space-between;
     justify-content: space-between;
 }
-#catalog .product .flex p{
+.product .flex p{
     color: #312d25;
     line-height: 19px;
     width: 95px;
 }
-#catalog .product .btn-block{
+.product .btn-block{
     width: 90px;
     height: 90px;
     border: 1px dotted #c7c7c7;
@@ -2578,8 +2616,9 @@ header.inside-header{
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+    margin: 0 auto;
 }
-#catalog .product .wishlist{
+.product .wishlist{
     position: absolute;
     width: 24px;
     height: 24px;
@@ -2595,10 +2634,10 @@ header.inside-header{
     -webkit-justify-content: center;
     justify-content: center;
 }
-#catalog .product .wishlist:hover{
+.product .wishlist:hover{
 	background: rgb(175, 52, 52);
 }
-#catalog .product .wishlist:before{
+.product .wishlist:before{
 	content:"+";
 	display:block;
 	color: #fff;
@@ -2606,12 +2645,12 @@ header.inside-header{
 	position: relative;
 	top: -1px;
 }
-#catalog .product .wishlist.active:before{
+.product .wishlist.active:before{
 	content:"-";
 	display:block;
 }
 
-#catalog .product .buy-btn{
+.product .buy-btn{
     width: 65px;
     height: 65px;
     background: #af3434;
@@ -2624,17 +2663,21 @@ header.inside-header{
     border-radius: 50%;
     margin: 0;
 }
-#catalog .product .buy-btn:hover{
+.product .buy-btn span{
+    font-size: 16px;
+    color: #989794;
+}
+.product .buy-btn:hover{
 	animation: pulse 1.7s infinite;
 }
-#catalog .product .buy-btn svg{
+ .product .buy-btn svg{
     height: 24px;
     width: 25px;
 }
-#catalog .product .buy-btn path{
+.product .buy-btn path{
     fill: #fff;
 } 
-#catalog .product .quick-btn {
+.product .quick-btn {
     background: #312d25;
     height: 40px;
     margin-top: -20px;
@@ -2647,7 +2690,8 @@ header.inside-header{
     position: relative;
     z-index: 3;
 }
-#catalog .product .quick-btn span{
+.product .quick-btn span{
+
     font-size: 17px;
     color: #fff;
 }
@@ -2831,6 +2875,7 @@ form .form-group input:-moz-placeholder {
     -webkit-justify-content: center;
     justify-content: center;
 }
+
 .kol span.minus, .kol span.plus{
     width: 24px;
     height: 24px;
@@ -2981,7 +3026,16 @@ form .form-group input:-moz-placeholder {
 	margin-bottom:24px
 }
 #checkout .bnt-block{}
-#checkout .bnt-block .btn{}
+form .bnt-block .btn{
+    background: #b43636;
+    background: -moz-linear-gradient(top, #b43636 0%, #9d2c2c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b43636), color-stop(100%, #9d2c2c));
+    background: -webkit-linear-gradient(top, #b43636 0%, #9d2c2c 100%);
+    background: -o-linear-gradient(top, #b43636 0%, #9d2c2c 100%);
+    background: -ms-linear-gradient(top, #b43636 0%, #9d2c2c 100%);
+    background: linear-gradient(top, #b43636 0%, #9d2c2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43636", endColorstr="#9d2c2c", GradientType=0);
+}
 
 .call-center{
 	background: url(../img/texture_bg.png);
@@ -3001,12 +3055,14 @@ form .form-group input:-moz-placeholder {
     flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
+
     -webkit-justify-content: center;
     justify-content: center;
 }
 .call-center .img img{
 	width: 60px;
 }
+
 .call-center .img:before, .call-center .img:after{
 	content:'';
 	display:block;
@@ -3046,9 +3102,11 @@ form .form-group input:-moz-placeholder {
 }
 #contact .contact_top{
 	-webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+	justify-content: flex-end;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	position: relative;
+	z-index: 2;
 }
 #contact .contact_top .txt{
     width: 445px;
@@ -3511,4 +3569,692 @@ font-family: 'Candara';
 }
 .contact_map .img-mob{
 	display:none;
+}
+#modal-page .btn{
+	margin:20px;
+}
+.modal .modal-header.flex{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+.label-flex{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.modal .modal-header a, .label-flex a{
+    border-bottom: 1px solid rgba(157, 44, 44, 0.3);
+}
+.modal .modal-header a:hover, label-flex a:hover{
+    border-bottom: 1px solid rgba(157, 44, 44, 0);
+}
+.label-flex a{
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+.via {
+    margin-top: 45px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.via .tit:before, .via .tit:after {
+    content: '';
+    display: block;
+    background: url(../img/line.png);
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.via .tit:after{
+    left: auto;
+    right: 0;
+}
+.via .tit {
+    width: 100%;
+    margin-bottom: 20px;
+    position:relative;
+    text-align: center;
+    font-size: 18px;
+}
+.via .tit h4{
+	font-size:18px;
+}
+
+.via a {
+    width: 145px;
+    margin-top: 0;
+    height: 40px;
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.via a:hover {
+    text-decoration: none;
+    opacity: 0.7
+}
+
+.via a img {
+    margin-right: 8px;
+}
+
+.via .via-f {
+    background: #3b5998;
+    border-bottom: 3px solid #2e3d5c;
+    color: #fff;
+}
+
+.via .via-g {
+    background: #fff;
+    border-bottom: 3px solid #a8a8a8;
+    color: #2f2f2f;
+}
+.modal-pad{
+	padding:40px 0;
+}
+.open-hidden{
+	overflow:hidden;
+}
+.modal-small .modal-content{
+    padding: 15px;
+    border-radius: 80px;
+}
+.modal-small .modal-content .close{
+	right: 40px;
+	top: 50%;
+	transform: translate(0, -50%);
+	margin-top: -5px;
+}
+.modal-small .flex .img{
+	width:65px;
+	height:65px;
+	border-radius:50%;
+	background: #b43636;
+	background: -moz-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b43636), color-stop(100%, #9e2c2c));
+	background: -webkit-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+	background: -o-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+	background: -ms-linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+	background: linear-gradient(top, #b43636 0%, #9e2c2c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b43636", endColorstr="#9e2c2c", GradientType=0);
+	position: relative;
+	margin-right: 20px;
+}
+.modal-small .flex img, .modal-small .flex svg{
+	width:25px;
+	height:25px;
+	position: absolute;
+	top: 50%;
+
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.modal-small .flex img{
+	height:auto
+}
+.modal-small .flex path{
+    fill: #fff;
+}
+
+#news-page{padding: 120px 0 60px;}
+#news-page .row{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#news-page .l-block{
+    width: 825px;
+}
+#news-page .l-block h2{
+	font-size:54px;
+}
+.publications{
+    margin-top: 105px;
+}
+.publications-item{
+    padding-bottom: 55px;
+    margin-bottom: 55px;
+    background: url(../img/line.png) repeat-x bottom;
+}
+.publications-item .date{
+    font-size: 14px;
+    color: #371f17;
+    margin-bottom: 30px;
+}
+.publications-item .date .circle{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #9d2c2c;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.publications-item .tit{
+	margin-bottom:35px;
+}
+.publications-item .tit a{
+    font-family: 'museo_cyrl500';
+    font-size: 30px;
+    color: #2e2c2a;
+    line-height:35px
+}
+.publications-item .tit a:hover{
+	text-decoration:underline;
+	color:#9d2c2c
+}
+.publications-item .img{
+	margin-bottom:35px;
+}
+.publications-item .img img{
+	max-width:100%;
+} 
+.publications-item .txt{
+	margin-bottom:30px
+}
+.publications-item  p{}
+.publications-item  .more{}
+.publications-item  .more a{
+    font-size: 15px;
+    color: #9b9695;
+    font-style: italic;
+}
+.publications-item  .more span{
+    margin-left: 15px;
+    position: relative;
+     -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    display:inline-block;
+}
+.publications-item  .more:hover span{
+	right:-5px;
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.publications-item  .more svg{}
+#news-page .r-block{
+    width: 350px;
+}
+#news-page .r-block h2{
+	font-size:36px
+}
+#news-page .news{
+    margin-top: 105px;
+}
+#news-page .news .news-item{
+    padding-bottom: 40px;
+    margin-bottom: 45px;
+    background: url(../img/line.png) repeat-x bottom;
+}
+#news-page .news .news-item .date{
+    font-size: 14px;
+    color: #371f17;
+}
+#news-page .news .news-item .date .circle{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #9d2c2c;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#news-page .news .news-item .tit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#news-page .news .news-item .tit a {
+    font-family: 'museo_cyrl500';
+    font-size: 18px;
+    color: #2e2c2a;
+    line-height: 22px;
+}
+#news-page .news .news-item .img{
+    margin-bottom: 25px;
+}
+#news-page .news .news-item .img img{
+	max-width:100%;
+} 
+#news-page .news .news-item .txt{}
+#news-page .news .news-item  p{
+    font-size: 17px;
+    line-height: 20px;
+}
+.pagination-block .pagination>li>a{
+    background: transparent;
+    border: 0;
+    font-family: 'museo_cyrl_300';
+    font-size: 24px;
+    color: #2e2c2a;
+    padding: 0 10px;
+}
+.pagination-block .pagination>li>a.active{
+	color:#9d2c2c;
+	font-size:30px;
+	position: relative;
+	top: -5px;
+}
+.pagination-block .pagination>li>a:hover{
+	color:#9d2c2c
+}
+.pagination-block .pagination li.arrow a{
+    padding: 0 35px;
+    position: relative;
+    top: -2px;
+}
+
+#reviews{
+    padding: 75px 0 80px;
+} 
+#reviews .reviews{
+    margin-top: 70px;
+}
+#reviews .reviews-item{
+	background:url(../img/texture2.png);
+	box-shadow: 0px 15px 20px rgba(0, 1, 3, 0.15);
+	margin-bottom: 20px;
+	padding: 40px 50px 60px;
+}
+#reviews .reviews-item .tit{
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background: url(../img/line.png) repeat-x bottom;
+}
+#reviews .reviews-item .tit img{
+    margin-right: 14px;
+}
+#reviews .reviews-item .tit h2{
+    font-size: 24px;
+}
+
+#reviews .reviews-item .txt{}
+#reviews .reviews-item .txt p{
+    font-size: 16px;
+    line-height: 19px;
+}
+#reviews .new-reviews{
+	background:url(../img/texture_bg.png);
+	box-shadow: 0px 30px 40px rgba(0, 1, 3, 0.25);
+	padding:55px 0 60px;
+	margin-top: 40px;
+}
+#reviews .new-reviews .block{
+	width:350px;
+	margin: 0 auto;
+}
+#reviews .new-reviews .tit{
+	text-align:center;
+	margin-bottom:30px;
+}
+#reviews .new-reviews .tit h2{
+	font-size:30px;
+}
+#reviews .new-reviews .bnt-block{
+	margin-top:40px;
+	text-align:center;
+}
+#reviews .new-reviews .btn{}
+.m-top-50{
+	margin-top:50px;
+}
+
+#product-page{
+    padding: 100px 0 0;
+} 
+#product_one-slider{}
+#product_one-slider h1{
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(#4d4a43, #2a2620);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#product_one-slider .swiper{
+    margin-top: 15px;
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
+}
+
+#product_one-slider .swiper-slide{}
+#product_one-slider .product{}
+#product_one-slider .articl{
+    text-align: center;
+    font-size: 14px;
+    color: #8b8b8b;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#product_one-slider .flex{
+}
+#product_one-slider .block{
+    width: 130px;
+}
+#product_one-slider .anchor{
+    font-size: 14px;
+    font-family: 'museo_cyrl_300';
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    position:relative;
+}
+#product_one-slider .anchor:hover{
+	transform:translate(0,-20px)
+}
+#product_one-slider .anchor span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#product_one-slider .anchor img{}
+#product_one-slider .img{
+    width: calc(100% - 260px);
+    background: url(../img/line.png) repeat-x center;
+    transform: none !important;
+}
+#product_one-slider .img img {}
+#product_one-slider .btn-block{
+    margin: 0 auto;
+    border: 0;
+}
+#product_one-slider .btn{
+    margin-top: 135px;
+}
+#product_one-slider .swiper-button-prev{
+    position: absolute;
+    bottom: 265px;
+    top: auto;
+    left: 160px;
+    width: 53px;
+    height: 53px;
+    margin: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+#product_one-slider .swiper-button-prev svg{
+	width:53px !important;
+	height:53px !important;
+}
+#product_one-slider .swiper-button-next{
+    position: absolute;
+    bottom: 265px;
+    top: auto;
+    left: auto;
+    right: 160px;
+    width: 53px;
+    height: 53px;
+    margin: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+#product_one-slider .nav{
+    position: absolute;
+    height: 135px;
+    bottom: 40px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+#product_one-slider .swiper-thumbnails{
+    width: 100%;
+    text-align: center;
+}
+#product_one-slider .swiper-thumbnails button{
+    background: transparent;
+    border: 0;
+    margin: 0 10px;
+    width: 61px;
+    height: 78px;
+    transition: none;
+}
+#product_one-slider .swiper-thumbnails button.is-active{
+	background:url(../img/catalog/prod-bg.png) top center;
+	background-size: contain;
+	background-position-y: 4px;
+}
+#product_one-slider .swiper-thumbnails img{
+    width: 46px;
+}
+#specifications{
+	background: rgba(245, 245, 245, 0.6) url(../img/ico/skin-bg.png) no-repeat;
+	padding: 75px 0;
+	margin-top: -20px;
+	background-position-x: 0;
+	background-position-y: 272px;
+}
+#product-page .product-info{}
+#product-page .product-info p{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 70px;
+}
+#product-page .product-info .specifications-block{}
+#product-page .product-info .tit{
+    font-family: 'museo_cyrl500';
+    font-size: 18px;
+}
+#lab{
+	background: url(../img/ico/lab-bg.png) no-repeat right bottom;
+	padding:75px 0;
+}
+#product-page .product-info .table-info{
+    margin-top: 30px;
+    width: 100%;
+}
+#product-page .product-info  .table-info table{width: 100%;}
+#product-page .product-info  .table-info td:first-child{
+	padding-right:35px;
+}
+#product-page .product-info .table-info td{
+    font-size: 14px;
+    color: #312d25;
+    padding: 4px 0;
+}
+#product-page .product-info .table-info td span{
+    display: inline-block;
+    width: 20px;
+}
+.container-540{
+	width:540px;
+	margin:0 auto;
+}
+#product-page .block-white{
+    margin-top: -50px;
+}
+#product-page .block-white:before{
+	content:'';
+	display:block;
+	border: 1px dotted #c7c7c7;
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0px);
+	z-index: -1;
+}
+#product-page .add-card{
+	font-size:16px;
+	color:#989794;
+	text-align:center;
+	font-style:italic;
+	display: block;
+	margin-top: 15px;
+}
+#product_one-slider .block {
+    opacity: 0;
+    -webkit-transform: translateY(30%);
+    -moz-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
+    transform: translateY(30%);
+    -webkit-transition: opacity 0.8s ease, -webkit-transform 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease, -moz-transform 0.8s ease-in-out;
+    transition: opacity 0.8s ease, transform 0.8s ease-in-out;
+}
+
+#product_one-slider .swiper-slide-active .block {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.recently-watched{
+    position: relative;
+    padding: 100px 0 90px;
+}
+.recently-watched:before{
+	content:'';
+	display:block;
+	background: rgba(245, 245, 245, 0.6);
+	width: 100%;
+	height: 795px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#product-slider .swiper-slide{
+	width:445px;
+	padding-top: 95px;
+}
+.recently-watched .container-1300{
+	position:relative
+}
+.recently-watched .tit-block{
+    text-align: center;
+}
+.recently-watched .tit-block h2{
+    font-size: 36px;
+    font-family: 'museo_cyrl_300';
+}
+#product-slider .bottom-info{
+    margin-top: 10px;
+    padding: 30px;
+    position: relative;
+    padding-bottom: 0;
+}
+#product-slider .bottom-info .tit-info{
+    font-family: 'museo_cyrl500';
+    font-size: 14px;
+    color: #b9b8b7;
+    position: absolute;
+    top: 0;
+    left: -49px;
+    transform: rotate(-90deg);
+    top: 48px;
+}
+#product-slider .bottom-info table{
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+}
+#product-slider .bottom-info tr:first-child td{
+	padding-top:30px
+}
+#product-slider .bottom-info td span{
+	display:inline-block;
+	width:7px
+}
+#product-slider .bottom-info td{
+    padding: 0 0 20px 0;
+    font-size: 14px;
+    color: #312d25;
+}
+#product-slider .swiper-container{
+	width:1110px
+}
+#product-slider .swiper-button-prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 53px;
+    height: 53px;
+    margin-top: 30px;
+}
+#product-slider .swiper-button-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: auto;
+    width: 53px;
+    height: 53px;
+    margin-top: 30px;
+}
+.wishlist-fix{
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-radius: 50%;
+	z-index:9
+}
+.wishlist-fix .bg{
+    width: 100%;
+    height: 100%;
+}
+.wishlist-fix a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.wishlist-fix a svg{
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.wishlist-fix a path{
+    fill: #b14848;
+}
+#product_one-slider .product:hover .img:before{
+	top: 8px;
 }

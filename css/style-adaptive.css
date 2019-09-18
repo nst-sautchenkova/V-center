@@ -1487,7 +1487,12 @@
 	.container-540{width:calc(100% - 20px) }
 }
 @media (max-width: 580px) {
-	#product_one-slider .swiper-button-next, #product_one-slider .swiper-button-prev{display:none}
+	#product_one-slider .swiper-button-next{
+    right: 0;
+}
+	#product_one-slider .swiper-button-prev{
+    left: 0;
+}
 	#product_one-slider .block{display:none}
 	#product_one-slider .img {
     width: 100%;
@@ -1550,7 +1555,6 @@
         margin-right: 0;
     }
     header .wishlist-block {
-        display: none
     }
     #advantages-news {
         background: transparent;
@@ -1617,6 +1621,16 @@
     margin: 20px 0;
     padding: 10px 0;
 }
+#personal-page .personal-history .history-item .info {
+    width: 100%;
+	left:0
+}
+#personal-page .personal-history .history-item .img {
+    width: 80px;
+    margin: 0 auto;
+}
+#personal-page .personal-history .history-item .h-1{width:100%}
+#personal-page .personal-history .name{text-align:center}
 }
 
 @media (max-width: 380px) {
@@ -1646,4 +1660,7 @@
     }
 	.via a {
     width: 115px;}
+	#personal-page .personal-history .history-header, #personal-page .personal-history .history-body_header {
+    padding: 20px 10px;
+}
 }

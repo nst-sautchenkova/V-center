@@ -160,6 +160,15 @@ $(document).on("ready", function () {
 	});
 });
 
+$(document).on("ready", function () {
+	$("#admin-page .admin_table-body .table-header").click(function () {
+		$(this).toggleClass('active');
+		$("#admin-page .admin_table-body .item").removeClass("active");
+		$(this).parent("#admin-page .admin_table-body .item").addClass("active");
+		$("#admin-page .admin_table-body .item.active").children(".table-body").slideToggle('normal');
+	});
+});
+
 
 $(document).ready(function(){
     $(".anchor").click(function () {
@@ -169,3 +178,21 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
+
+
+$(document).on("ready", function () {
+	$(".admin-item > .item").click(function () {
+		$(".admin-item").removeClass("active");
+		$(this).parent('.admin-item').addClass('active');
+	});
+});
+
+
+
+
+
+
+
+
+

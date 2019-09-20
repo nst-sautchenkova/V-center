@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>V-center Производство натуральной кожи</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/style-adaptive.css" /> 
+    
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.thumbnails.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+  
+</head>
+	<body class="js-loading">
+       <div id="loader">
+            <div class="spinner">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+             </div>
+        </div><!--/Loader-->
+        
+        <div id="main" class="main-bg">
+            <div id="wrapper">
+                <header class="inside-header">
+                    <div class="row bg-transparent fadeEl fadeEl-left start-anim container-1300">
+                    	<div class="logo-menu flex">
+                            <div class="logo"><a href="#"><img src="img/logo.png" alt="v-center"/></a></div>
+                            <div id="a-tit"><h1>Система учета</h1></div>
+                        </div>
+                        <div class="language-block">
+                            <form id="form-language">
+                            	<ul>
+                                    <li>
+                                        <button class="btn-link language-select active" type="button" name="RU">Рус</button>
+                                    </li>
+                                    <li>
+                                        <button class="btn-link language-select" type="button" name="YKR">Укр</button>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div><!-- language-block -->
+                    </div><!--row-->
+                </header>
+                
+                
+                    
+                <section id="admin-page" class="container-1300"> 
+                    <div class="row">
+                    	<div class="menu-admin">
+                            <div class="btn-block"><a href="#" class="btn">Создать заказ</a></div>
+                            <ul>
+                                <li><a href="#" class="a1"><span>Все заказы</span></a></li>
+                                <li><a href="#" class="active a2"><span>Новые заказы</span></a></li>
+                                <li><a href="#" class="a3"><span>Заказы в обработке</span></a></li>
+                                <li><a href="#" class="a4"><span>Закрытые заказы</span></a></li>
+                                <li><a href="#" class="a5"><span>Отмененные заказы</span></a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="fadeEl fadeEl-right start-anim admin-list">
+                            <div class="admin_header">
+                                <div class="row">
+                                    <div class="tit">Все заказы</div>
+                                    <div class="flex">
+                                        <div id="search" class="form-group search">
+                                            <div class="input-group">
+                                                <input type="search" name="search" placeholder="№ заказа, e-mail или телефон заказчика" value="" class="form-control">
+                                                <button type="button"><img src="img/ico/search.png" alt=""></button>
+                                            </div>
+                                        </div>
+                                        <div class="period flex">
+                                            <div class="tit">За период:</div>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="25.07.2019" type="date">
+                                                </div>
+                                                <div class="dash">-</div>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="25.07.2019" type="date">
+                                                </div>
+                                                <div class="bnt-block">
+                                                    <button class="btn">Показать</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- admin_header -->
+                            
+                            
+                            <div class="admin_table">
+                                <div class="admin_table-header">
+                                    <div class="tit h-1">№</div>
+                                    <div class="tit h-2">Дата и время</div>
+                                    <div class="tit h-3">Клиент</div>
+                                    <div class="tit h-4">Город</div>
+                                    <div class="tit h-5">Способ доставки</div>
+                                    <div class="tit h-6">Товары</div>
+                                    <div class="tit h-7">Сумма, грн</div>
+                                    <div class="tit h-8">Статус</div>
+                                </div>
+                                
+                                <div class="admin_table-body">
+                                    <div class="item">
+                                        <div class="table-header">
+                                            <div class="h-1 m-t">
+                                                <div class="tit tag red-txt"><span class="m-tit">№ заказа:</span>1543<img src="img/ico/tag.png" alt="" /></div>
+                                            </div>
+                                            <div class="h-2 m-t">
+                                                <div class="tit text-center"><span class="m-tit">Дата и время заказа:</span>25.08.2019
+                                                    <br/>15:48</div>
+                                            </div>
+                                            <div class="h-3 m-t">
+                                                <div class="tit"><span class="m-tit">Клиент:</span>Николай Голованов <a href="mailto:username@gmail.com" class="name">username@gmail.com</a></div>
+                                            </div>
+                                            <div class="h-4 m-t">
+                                                <div class="tit"><span class="m-tit">Город:</span>Одесса</div>
+                                            </div>
+                                            <div class="h-5 m-t">
+                                                <div class="tit"><span class="m-tit">Способ доставки:</span>Новая почта</div>
+                                            </div>
+                                            <div class="h-6 m-t">
+                                                <div class="tit red-txt text-dotted"><span class="m-tit ">Количество товаров:</span>5</div>
+                                            </div>
+                                            <div class="h-7 m-t">
+                                                <div class="tit red-txt"><span class="m-tit">Сумма, грн:</span>55 350</div>
+                                            </div>
+                                            <div class="h-8 m-t">
+                                                <div class="tit">
+                                                    <span class="m-tit">Статус:</span>
+                                                    <span class="status"><img src="img/ico/tag2.png" alt=""/>Оплачен</span>
+                                                    <span class="status"><img src="img/ico/tag3.png" alt=""/>Отправлен</span>
+                                                </div>
+                                            </div>
+                                            <div class="arrow"><svg width="9px" height="6px"><path fill-rule="evenodd"  fill="rgb(92, 77, 71)"
+ d="M8.707,1.707 L4.707,5.707 L4.500,5.500 L4.293,5.707 L0.293,1.707 L1.707,0.293 L4.500,3.085 L7.293,0.293 L8.707,1.707 Z"/></svg></div>
+                                        </div>
+                                        
+                                        <div class="table-body">
+                                            <div class="table-responsive">
+                                                <table>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Фото</th>
+                                                        <th>Артикул</th>
+                                                        <th>Название</th>
+                                                        <th>Грн/м2 </th>
+                                                        <th>м<span class="m2">2</span></th>
+                                                        <th>Стоимость, грн</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#" class="delete"><img src="img/ico/delete-button.png" alt="" /></a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="img"><img src="img/catalog/1.png" alt="" /></div>
+                                                        </td>
+                                                        <td>fl-1.2-1.4-b</td>
+                                                        <td>Деневр</td>
+                                                        <td class="text-center">
+                                                            <div class="border">319</div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="border">12</div>
+                                                        </td>
+                                                        <td>27 743</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#" class="delete"><img src="img/ico/delete-button.png" alt="" /></a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="img"><img src="img/catalog/1.png" alt="" /></div>
+                                                        </td>
+                                                        <td>fl-1.2-1.4-b</td>
+                                                        <td>Деневр</td>
+                                                        <td class="text-center">
+                                                            <div class="border">319</div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="border">12</div>
+                                                        </td>
+                                                        <td>27 743</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#" class="delete"><img src="img/ico/delete-button.png" alt="" /></a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="img"><img src="img/catalog/1.png" alt="" /></div>
+                                                        </td>
+                                                        <td>fl-1.2-1.4-b</td>
+                                                        <td>Деневр</td>
+                                                        <td  class="text-center">
+                                                            <div class="border">319</div>
+                                                        </td>
+                                                        <td  class="text-center">
+                                                            <div class="border">12</div>
+                                                        </td>
+                                                        <td>27 743</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="total-block">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <label>Способ оплаты</label>
+                                                            <div class="select">
+                                                                <select class="form-control form-select">
+                                                                    <option>LiqPay</option>
+                                                                    <option>LiqPay</option>
+                                                                    <option>LiqPay</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                            
+                                                        <div class="form-group">
+                                                            <label>Сатус оплаты</label>
+                                                            <div class="select">
+                                                                <select class="form-control form-select">
+                                                                    <option>Оплачен</option>
+                                                                    <option>Не оплачен</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                            
+                                                        <div class="form-group">
+                                                            <label>Сатус доставки</label>
+                                                            <div class="select">
+                                                                <select class="form-control form-select">
+                                                                    <option>Отправлен</option>
+                                                                    <option>Ожидает оплаты</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="total">Итого: <span>35 280 грн</span></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="add">
+                                                <a href="#" class="btn"><img src="img/ico/add.png" alt="" />Добавить в заказ</a>
+                                            </div>
+                                            <div class="info">
+                                                <form>
+                                                    <div class="form_item">
+                                                        <div class="tit">
+                                                            <div class="img"><img src="img/ico/resume.svg" alt=""></div>
+                                                            <h2>Получатель</h2>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Ваше имя</label>
+                                                            <input class="form-control" placeholder="Введите Ваше имя" type="text">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Ваш телефон</label>
+                                                            <input class="form-control" placeholder="+380 __ ___ __ __" type="tel">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>E-mail</label>
+                                                            <input class="form-control" placeholder="username@gmail.com" type="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Ваш комментарий</label>
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_item">
+                                                        <div class="tit">
+                                                            <div class="img"><img src="img/ico/tracking.svg" alt=""></div>
+                                                            <h2>Доставка</h2>
+                                                        </div>
+                                                        <div class="form-flex checkbox-flex">
+                                                            <div class="checkbox delivery-pickup">
+                                                                <input type="radio" class="custom-control-input" id="radio-1" name="r1">
+                                                                <label for="radio-1">
+                                                                    <span class="check-block">
+                                                                                                <svg width="19px" height="19px" class="bg"><path fill-rule="evenodd" stroke="rgb(132, 117, 103)" stroke-width="2px" stroke-dasharray="0, 6" stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0.851" fill="rgb(255, 255, 255)" d="M9.000,0.999 C13.418,0.999 17.000,4.581 17.000,8.999 C17.000,13.418 13.418,16.999 9.000,16.999 C4.582,16.999 1.000,13.418 1.000,8.999 C1.000,4.581 4.582,0.999 9.000,0.999 Z"></path></svg>
+                                                                             <svg width="8px" height="8px" class="circle"><path fill-rule="evenodd" fill="rgb(59, 53, 53)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 -0.000,6.209 -0.000,4.000 C-0.000,1.791 1.791,-0.000 4.000,-0.000 Z"></path></svg>
+                                                                                             </span> Самовывоз
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox delivery-post">
+                                                                <input type="radio" class="custom-control-input" id="radio-2" name="r1">
+                                                                <label for="radio-2">
+                                                                    <span class="check-block">
+                                                                                                <svg width="19px" height="19px" class="bg"><path fill-rule="evenodd" stroke="rgb(132, 117, 103)" stroke-width="2px" stroke-dasharray="0, 6" stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0.851" fill="rgb(255, 255, 255)" d="M9.000,0.999 C13.418,0.999 17.000,4.581 17.000,8.999 C17.000,13.418 13.418,16.999 9.000,16.999 C4.582,16.999 1.000,13.418 1.000,8.999 C1.000,4.581 4.582,0.999 9.000,0.999 Z"></path></svg>
+                                                                             <svg width="8px" height="8px" class="circle"><path fill-rule="evenodd" fill="rgb(59, 53, 53)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 -0.000,6.209 -0.000,4.000 C-0.000,1.791 1.791,-0.000 4.000,-0.000 Z"></path></svg>
+                                                                                             </span> Новая почта
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="delivery-new">
+                                                            <div class="form-group">
+                                                                <label>Город</label>
+                                                                <input class="form-control" placeholder="Введите Ваше имя" type="text">
+                                                            </div>
+                                                            <div class="form-flex">
+                                                                <div class="form-group">
+                                                                    <label>Отделение</label>
+                                                                    <div class="select">
+                                                                        <select class="form-control form-select">
+                                                                            <option disabled="">Номер</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="check-a">
+                                                                        <label for="check-a">
+                                                                            <span class="check-block">
+                                                                                                   <svg width="9px" height="7px"><path fill-rule="evenodd" fill="rgb(249, 244, 238)" d="M8.992,0.956 L4.108,5.847 L4.304,6.044 L3.357,6.992 L3.160,6.796 L2.964,6.992 L2.017,6.044 L2.213,5.847 L0.008,3.639 L0.955,2.690 L3.160,4.899 L8.045,0.008 L8.992,0.956 Z"></path></svg>
+                                                                                                </span> Адресная доставка
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Введите адрес доставки</label>
+                                                                <input class="form-control" placeholder="Введите адрес" type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="bnt-block">
+                                                            <button class="btn">Сохранить</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div><!-- item -->
+                                    <div class="item">
+                                        <div class="table-header">
+                                            <div class="h-1 m-t">
+                                                <div class="tit tag"><span class="m-tit">№ заказа:</span>1543</div>
+                                            </div>
+                                            <div class="h-2 m-t">
+                                                <div class="tit text-center"><span class="m-tit">Дата и время заказа:</span>25.08.2019
+                                                    <br/>15:48</div>
+                                            </div>
+                                            <div class="h-3 m-t">
+                                                <div class="tit"><span class="m-tit">Клиент:</span>Николай Голованов <a href="mailto:username@gmail.com" class="name">username@gmail.com</a></div>
+                                            </div>
+                                            <div class="h-4 m-t">
+                                                <div class="tit"><span class="m-tit">Город:</span>Одесса</div>
+                                            </div>
+                                            <div class="h-5 m-t">
+                                                <div class="tit"><span class="m-tit">Способ доставки:</span>Новая почта</div>
+                                            </div>
+                                            <div class="h-6 m-t">
+                                                <div class="tit red-txt text-dotted"><span class="m-tit ">Количество товаров:</span>5</div>
+                                            </div>
+                                            <div class="h-7 m-t">
+                                                <div class="tit red-txt"><span class="m-tit">Сумма, грн:</span>55 350</div>
+                                            </div>
+                                            <div class="h-8 m-t">
+                                                <div class="tit">
+                                                    <span class="m-tit">Статус:</span>
+                                                    <span class="status"><img src="img/ico/tag1.png" alt=""/>Ожидает оплаты</span>
+                                                </div>
+                                            </div>
+                                            <div class="arrow"><svg width="9px" height="6px"><path fill-rule="evenodd"  fill="rgb(92, 77, 71)"
+ d="M8.707,1.707 L4.707,5.707 L4.500,5.500 L4.293,5.707 L0.293,1.707 L1.707,0.293 L4.500,3.085 L7.293,0.293 L8.707,1.707 Z"/></svg></div>
+                                        </div>
+                                        
+                                        <div class="table-body">
+                                            <div class="table-responsive">
+                                                <table>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Фото</th>
+                                                        <th>Артикул</th>
+                                                        <th>Название</th>
+                                                        <th>Грн/м2 </th>
+                                                        <th>м<span class="m2">2</span></th>
+                                                        <th>Стоимость, грн</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#" class="delete"><img src="img/ico/delete-button.png" alt="" /></a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="img"><img src="img/catalog/1.png" alt="" /></div>
+                                                        </td>
+                                                        <td>fl-1.2-1.4-b</td>
+                                                        <td>Деневр</td>
+                                                        <td class="text-center">
+                                                            <div class="border">319</div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="border">12</div>
+                                                        </td>
+                                                        <td>27 743</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#" class="delete"><img src="img/ico/delete-button.png" alt="" /></a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="img"><img src="img/catalog/1.png" alt="" /></div>
+                                                        </td>
+                                                        <td>fl-1.2-1.4-b</td>
+                                                        <td>Деневр</td>
+                                                        <td  class="text-center">
+                                                            <div class="border">319</div>
+                                                        </td>
+                                                        <td  class="text-center">
+                                                            <div class="border">12</div>
+                                                        </td>
+                                                        <td>27 743</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="total-block">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <label>Способ оплаты</label>
+                                                            <div class="select">
+                                                                <select class="form-control form-select">
+                                                                    <option>LiqPay</option>
+                                                                    <option>LiqPay</option>
+                                                                    <option>LiqPay</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                            
+                                                        <div class="form-group">
+                                                            <label>Сатус оплаты</label>
+                                                            <div class="select">
+                                                                <select class="form-control form-select">
+                                                                    <option>Оплачен</option>
+                                                                    <option>Не оплачен</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                            
+                                                        <div class="form-group">
+                                                            <label>Сатус доставки</label>
+                                                            <div class="select">
+                                                                <select class="form-control form-select">
+                                                                    <option>Отправлен</option>
+                                                                    <option>Ожидает оплаты</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="total">Итого: <span>35 280 грн</span></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="add">
+                                                <a href="#" class="btn"><img src="img/ico/add.png" alt="" />Добавить в заказ</a>
+                                            </div>
+                                            <div class="info">
+                                                <form>
+                                                    <div class="form_item">
+                                                        <div class="tit">
+                                                            <div class="img"><img src="img/ico/resume.svg" alt=""></div>
+                                                            <h2>Получатель</h2>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Ваше имя</label>
+                                                            <input class="form-control" placeholder="Введите Ваше имя" type="text">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Ваш телефон</label>
+                                                            <input class="form-control" placeholder="+380 __ ___ __ __" type="tel">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>E-mail</label>
+                                                            <input class="form-control" placeholder="username@gmail.com" type="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Ваш комментарий</label>
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_item">
+                                                        <div class="tit">
+                                                            <div class="img"><img src="img/ico/tracking.svg" alt=""></div>
+                                                            <h2>Доставка</h2>
+                                                        </div>
+                                                        <div class="form-flex checkbox-flex">
+                                                            <div class="checkbox delivery-pickup">
+                                                                <input type="radio" class="custom-control-input" id="radio-3" name="r3">
+                                                                <label for="radio-3">
+                                                                    <span class="check-block">
+                                                                                                <svg width="19px" height="19px" class="bg"><path fill-rule="evenodd" stroke="rgb(132, 117, 103)" stroke-width="2px" stroke-dasharray="0, 6" stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0.851" fill="rgb(255, 255, 255)" d="M9.000,0.999 C13.418,0.999 17.000,4.581 17.000,8.999 C17.000,13.418 13.418,16.999 9.000,16.999 C4.582,16.999 1.000,13.418 1.000,8.999 C1.000,4.581 4.582,0.999 9.000,0.999 Z"></path></svg>
+                                                                             <svg width="8px" height="8px" class="circle"><path fill-rule="evenodd" fill="rgb(59, 53, 53)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 -0.000,6.209 -0.000,4.000 C-0.000,1.791 1.791,-0.000 4.000,-0.000 Z"></path></svg>
+                                                                                             </span> Самовывоз
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox delivery-post">
+                                                                <input type="radio" class="custom-control-input" id="radio-4" name="r4">
+                                                                <label for="radio-4">
+                                                                    <span class="check-block">
+                                                                                                <svg width="19px" height="19px" class="bg"><path fill-rule="evenodd" stroke="rgb(132, 117, 103)" stroke-width="2px" stroke-dasharray="0, 6" stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0.851" fill="rgb(255, 255, 255)" d="M9.000,0.999 C13.418,0.999 17.000,4.581 17.000,8.999 C17.000,13.418 13.418,16.999 9.000,16.999 C4.582,16.999 1.000,13.418 1.000,8.999 C1.000,4.581 4.582,0.999 9.000,0.999 Z"></path></svg>
+                                                                             <svg width="8px" height="8px" class="circle"><path fill-rule="evenodd" fill="rgb(59, 53, 53)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 -0.000,6.209 -0.000,4.000 C-0.000,1.791 1.791,-0.000 4.000,-0.000 Z"></path></svg>
+                                                                                             </span> Новая почта
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="delivery-new">
+                                                            <div class="form-group">
+                                                                <label>Город</label>
+                                                                <input class="form-control" placeholder="Введите Ваше имя" type="text">
+                                                            </div>
+                                                            <div class="form-flex">
+                                                                <div class="form-group">
+                                                                    <label>Отделение</label>
+                                                                    <div class="select">
+                                                                        <select class="form-control form-select">
+                                                                            <option disabled="">Номер</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="check-a">
+                                                                        <label for="check-a">
+                                                                            <span class="check-block">
+                                                                                                   <svg width="9px" height="7px"><path fill-rule="evenodd" fill="rgb(249, 244, 238)" d="M8.992,0.956 L4.108,5.847 L4.304,6.044 L3.357,6.992 L3.160,6.796 L2.964,6.992 L2.017,6.044 L2.213,5.847 L0.008,3.639 L0.955,2.690 L3.160,4.899 L8.045,0.008 L8.992,0.956 Z"></path></svg>
+                                                                                                </span> Адресная доставка
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Введите адрес доставки</label>
+                                                                <input class="form-control" placeholder="Введите адрес" type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="bnt-block">
+                                                            <button class="btn">Сохранить</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div><!-- item -->
+                                </div>
+                                
+                            </div><!-- admin_table -->
+                        </div><!-- admin-list -->
+                    </div>
+               </section>
+            </div><!-- End #wrapper --> 
+    
+            <footer>
+                <div class="top">
+                    <div class="container">
+                        <div class="nav">
+                            <ul class="flex">
+                                <li><a href="#">Доставка и оплата </a></li>
+                                <li><a href="#">О нас  </a></li>
+                                <li><a href="#">Контакты  </a></li>
+                                <li><a href="#">Отзывы    </a></li>
+                                <li><a href="#">Карта сайта</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--container-->
+                </div>
+            
+                <div class="bot">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="social-networks">
+                                <a href="#" class="ico fb">
+                                    <svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-1558.000000, -450.000000)" fill="rgba(255,255,255,0.5);">
+                                                <g transform="translate(1552.000000, 256.000000)">
+                                                    <path d="M16.5857723,194.003953 L13.9473725,194 C10.9832208,194 9.06765572,195.835305 9.06765572,198.675926 L9.06765572,200.83184 L6.41486271,200.83184 C6.18562989,200.83184 6,201.005389 6,201.219458 L6,204.343133 C6,204.557203 6.18584156,204.730554 6.41486271,204.730554 L9.06765572,204.730554 L9.06765572,212.61258 C9.06765572,212.826649 9.25328561,213 9.48251842,213 L12.9436587,213 C13.1728915,213 13.3585214,212.826452 13.3585214,212.61258 L13.3585214,204.730554 L16.4602552,204.730554 C16.689488,204.730554 16.8751179,204.557203 16.8751179,204.343133 L16.8763878,201.219458 C16.8763878,201.116673 16.8325733,201.018237 16.7548923,200.945497 C16.6774231,200.872757 16.5715908,200.83184 16.4613135,200.83184 L13.3585214,200.83184 L13.3585214,199.004245 C13.3585214,198.125828 13.5826743,197.6799 14.8082126,197.6799 L16.585349,197.679307 C16.8143701,197.679307 17,197.505758 17,197.291886 L17,194.391374 C17,194.177699 16.8145818,194.004349 16.5857723,194.003953" id="fb"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="#" class="ico insta">
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-1555.000000, -404.000000)" fill="rgba(255,255,255,0.5);">
+                                                <g transform="translate(1552.000000, 256.000000)">
+                                                    <path d="M17.1877802,152.218618 C17.1877802,152.420016 17.1183489,152.590182 16.9792308,152.729044 C16.8404046,152.868015 16.6703106,152.93741 16.4688394,152.93741 L14.6564006,152.93741 C14.4551118,152.93741 14.2847989,152.867979 14.1459727,152.729044 C14.0070736,152.590182 13.9377152,152.420016 13.9377152,152.218618 L13.9377152,150.500027 C13.9377152,150.305562 14.0070736,150.137184 14.1459727,149.994783 C14.2848354,149.852455 14.4551483,149.781199 14.6564006,149.781199 L16.4688394,149.781199 C16.6703106,149.781199 16.8404046,149.852418 16.9792308,149.994783 C17.1183124,150.137184 17.1877802,150.305562 17.1877802,150.500027 L17.1877802,152.218618 Z M17.1877802,161.520952 C17.1877802,161.70137 17.1250986,161.852345 17.0001733,161.97395 C16.8749561,162.095445 16.7258776,162.156229 16.5520986,162.156229 L5.41681603,162.156229 C5.23628727,162.156229 5.08512909,162.095445 4.96370635,161.97395 C4.84210118,161.8526 4.78135333,161.70137 4.78135333,161.520952 L4.78135333,154.77071 L6.25006499,154.77071 C6.11123881,155.208275 6.04180748,155.663207 6.04180748,156.135323 C6.04180748,157.46896 6.52786329,158.605907 7.50008437,159.547075 C8.47241491,160.487878 9.64253171,160.958498 11.0105807,160.958498 C11.9133705,160.958498 12.7466194,160.743127 13.5108019,160.312604 C14.2746925,159.881825 14.878486,159.296897 15.3232406,158.557236 C15.7677398,157.817611 15.9899711,157.010271 15.9899711,156.135359 C15.9899711,155.663243 15.9202844,155.208421 15.7814582,154.770746 L17.1878532,154.77071 L17.1878532,161.520988 L17.1877802,161.520988 L17.1877802,161.520952 Z M8.74499583,153.765547 C9.37341688,153.157998 10.1286605,152.854078 11.0106172,152.854078 C11.8993966,152.854078 12.6580334,153.157998 13.2866004,153.765547 C13.9151674,154.373205 14.2292684,155.107649 14.2292684,155.968732 C14.2292684,156.829706 13.9151674,157.564186 13.2866004,158.171662 C12.6580334,158.779466 11.899652,159.08335 11.0106172,159.08335 C10.128697,159.08335 9.37352634,158.779211 8.74499583,158.171662 C8.11642883,157.564113 7.80218181,156.829706 7.80218181,155.968732 C7.80218181,155.107649 8.11642883,154.373242 8.74499583,153.765547 L8.74499583,153.765547 Z M18.396024,148.604265 C17.9932274,148.201361 17.5105283,148 16.9481819,148 L5.05218296,148 C4.48965417,148 4.00710093,148.201434 3.60419489,148.604265 C3.20136181,149.006987 3,149.489611 3,150.052028 L3,161.947863 C3,162.510207 3.20132532,162.99294 3.60419489,163.395698 C4.00710093,163.798493 4.48976362,164 5.05218296,164 L16.948036,164 C17.5102729,164 17.993118,163.798493 18.3958781,163.395698 C18.7988206,162.99294 19,162.510207 19,161.947863 L19,150.052028 C18.9999635,149.489501 18.7988206,149.007133 18.396024,148.604265 L18.396024,148.604265 Z" id="in"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="copyright">Copyright 2019 © V-Center</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <div class="btn-scrollToTop"><a href="#" class="scrollToTop"><svg width="55.5px" height="55.5px"><path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-dasharray="8, 4" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.22" fill="rgb(255, 255, 255)"
+ d="M27.500,0.499 C42.412,0.499 54.500,12.587 54.500,27.499 C54.500,42.411 42.412,54.499 27.500,54.499 C12.588,54.499 0.500,42.411 0.500,27.499 C0.500,12.587 12.588,0.499 27.500,0.499 Z"/></svg><svg width="20px" height="10px" class="arr"><path fill-rule="evenodd"  fill="rgb(19, 19, 19)" d="M20.002,9.823 L19.820,10.001 L10.000,0.390 L0.179,10.001 L-0.003,9.823 L9.818,0.211 L9.780,0.175 L9.962,-0.004 L10.000,0.033 L10.038,-0.004 L10.220,0.175 L10.182,0.211 L20.002,9.823 Z"/></svg></a></div>
+        </div><!--/Main-->
+       
+	   <script src="js/main.js"></script>
+       <script>
+            var inputsTel = document.querySelectorAll('input[type="tel"]');
+            Inputmask({
+              "mask": "+38(999) 999-99-99",
+              showMaskOnHover: false
+            }).mask(inputsTel);
+        </script> 
+       <script src="js/common.js"></script>   
+	</body>
+</html>

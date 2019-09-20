@@ -6727,6 +6727,9 @@ select {
     .table:before {
         display: none;
     }
+	#admin-page .admin_header .period input {
+    width: 115px;
+}
 }
 
 @media (max-width: 900px) {
